@@ -20,4 +20,20 @@ class Deck {
             }
         }
     }
+
+    // Method to print all cards in the deck
+    public void printDeck() {
+        for (Card card : deck) {
+            System.out.println(card);
+        }
+    }
+
+    // Method to print a specific card
+    public void printCard(int index) {
+        if (index >= 0 && index < deck.size()) {
+            System.out.println(deck.get(index));
+        } else {
+            System.out.println("Invalid card index.");
+        }
+    }
 }
